@@ -13,7 +13,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -33,13 +32,13 @@ Users should be able to:
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
 ### Screenshot
-![Desktop-Design](desktopDesign.png.png)
+![Desktop-Design](desktopDesign.png)
 ![Mobile-Design](MobileDesign.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Varsha-Viu/Age-Calculator-App)
+- Live Site URL: [Add live site URL here](https://varsha-viu.github.io/Age-Calculator-App/)
 
 ## My process
 

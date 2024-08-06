@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: 'hsl(259, 100%, 65%)',
+            lightRed: 'hsl(0, 100%, 67%)',
+            offWhite: 'hsl(0, 0%, 94%)',
+            lightGrey: 'hsl(0, 0%, 86%)',
+            smokeyGrey: 'hsl(0, 1%, 44%)',
+            offBlack: 'hsl(0, 0%, 8%)'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="bg-offWhite">
+  <main
+    class="bg-white xl:w-[40%] w-[90%] xl:h-[500px] mb-2 rounded-t-[25px] rounded-bl-[25px] rounded-br-[150px] shadow-sm xl:p-10 p-6">
+    <form method="post" class="flex flex-col xl:gap-6 gap-8 mb-6" name="ageForm" id="ageForm">
+      <div class="flex xl:gap-6 gap-3">
+        <div>
+          <label id="labels" for="day"
+            class="block text-smokeyGrey font-bold text-[12px] uppercase tracking-widest mb-2">Day</label>
+          <input type="number" name="day" id="day" placeholder="DD"
+            class="font-black py-3 px-4 border border-lightGrey rounded-lg xl:text-[20px] text-[16px] placeholder:text-smokeyGrey focus:border-purple focus:outline-0 xl:w-[120px] w-[80px] mb-2">
+          <div class="error text-lightRed text-[10px] invisible"></div>
+        </div>
+
+        <div>
+          <label id="labels" for="month"
+            class="block text-smokeyGrey font-bold text-[12px] uppercase tracking-widest mb-2">Month</label>
+          <input type="number" name="month" id="month" placeholder="MM"
+            class="block font-black py-3 px-4 border border-lightGrey rounded-lg xl:text-[20px] text-[16px] placeholder:text-smokeyGrey focus:border-purple focus:outline-0 xl:w-[120px] w-[80px] mb-2">
+          <div class="error text-lightRed text-[10px] invisible"></div>
+        </div>
+        <div>
+          <label id="labels" for="year"
+            class="block text-smokeyGrey font-bold text-[12px] uppercase tracking-widest mb-2">Year</label>
+          <input type="number" name="year" id="year" placeholder="YYYY"
+            class="block font-black py-3 px-4 border border-lightGrey rounded-lg xl:text-[20px] text-[16px] placeholder:text-smokeyGrey focus:border-purple focus:outline-0 xl:w-[120px] w-[80px] mb-2">
+          <div class="error text-lightRed text-[10px] invisible"></div>
+        </div>
+      </div>
+      <div class="relative">
+        <hr>
+        <button type="submit" id="btn"
+          class="bg-purple p-3 rounded-full absolute xl:right-0 xl:-top-[35px] -top-[30px] right-[50%] translate-x-2/4 xl:translate-x-0 active:border-0 active:outline-0">
+          <img src="./assets/images/icon-arrow.svg" alt="arrow icon" class="w-[30px] xl:w-auto">
+        </button>
+      </div>
+    </form>
+
+    <section>
+      <div id="year-input" class="flex items-center gap-2 xl:text-[60px] text-[50px] font-extrabold italic">
+        <p id="yearRes" class="text-purple tracking-widest">--</p>
+        <h1>years</h1>
+      </div>
+      <div id="year-input" class="flex items-center gap-2 xl:text-[60px] text-[50px] font-extrabold italic">
+        <p id="monthRes" class="text-purple tracking-widest">--</p>
+        <h1>months</h1>
+      </div>
+      <div id="year-input" class="flex items-center gap-2 xl:text-[60px] text-[50px] font-extrabold italic">
+        <p id="dayRes" class="text-purple tracking-widest">--</p>
+        <h1>days</h1>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center text-[11px]">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+      class="text-purple hover:underline">Frontend
+      Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/varsha-pathak-0527251a1/"
+      class="text-purple hover:underline">Varsha Pathak</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

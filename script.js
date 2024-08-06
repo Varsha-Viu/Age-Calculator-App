@@ -71,7 +71,7 @@ function animateValues(element, diff, start) {
 
 function validateFrom(dayField, monthField, yearField) {
   const errorField = document.querySelectorAll(".error");
-  const labels = document.querySelectorAll("#labels");
+  const labels = document.querySelectorAll(".labels");
   const date = new Date();
   let isValid = true;
   //   required validations
